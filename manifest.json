@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "niconico player extension",
+  "version": "1.0",
+  "description": "ニコニコ動画のプレーヤーに便利機能を追加します",
+  "action": {},
+  "permissions": [],
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.nicovideo.jp/watch/*"
+      ],
+      "js": [
+        "./content_script.js"
+      ],
+      "css": [
+        "./content_script.css"
+      ]
+    }
+  ]
+}
